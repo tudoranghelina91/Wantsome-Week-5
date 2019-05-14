@@ -10,6 +10,12 @@ namespace SchoolClasses.Classes
     public class Discipline : IName
     {
         public string Name { get; set; }
+
+        public Discipline()
+        {
+
+        }
+
         public Discipline(string name)
         {
             Name = name;

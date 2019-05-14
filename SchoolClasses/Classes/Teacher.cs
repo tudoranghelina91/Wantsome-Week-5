@@ -21,23 +21,15 @@ namespace SchoolClasses.Classes
 
         public void Teach(Discipline discipline)
         {
-            bool canTeach = false;
-            foreach (Discipline d in Disciplines)
-            {
-                if (d.Name == discipline.Name)
-                {
-                    canTeach = true;
-                }
-            }
-
-            if (canTeach)
+            Discipline disc = Disciplines.Find(d => d == discipline);
+            if (disc != null)
             {
                 OutputHandling.Message($"Teaching {discipline}", consoleColor: ConsoleColor.Green);
             }
 
             else
             {
-                OutputHandling.Message($"Sorry, I am not allowed to teach that subject.", consoleColor: ConsoleColor.Red);
+                OutputHandling.Message($"Sorry, but I am not lisenced to teach {discipline}");
             }
         }
     }
