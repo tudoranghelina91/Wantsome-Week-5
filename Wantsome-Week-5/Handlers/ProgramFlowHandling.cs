@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Wantsome_Week_04.Handlers
+namespace Handlers
 {
     public class ProgramFlowHandling
     {
