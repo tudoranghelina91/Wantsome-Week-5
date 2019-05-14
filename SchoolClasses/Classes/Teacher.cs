@@ -11,7 +11,7 @@ namespace SchoolClasses.Classes
     public class Teacher : Person, IComments
     {
         public override string Name { get; set; }
-        public List<Discipline> Disciplines { get; set; }
+        public List<Discipline> Disciplines { get; set; } = new List<Discipline>();
         public string Comments { get; set; }
         public Teacher(string name, List<Discipline> disciplines)
         {
@@ -19,9 +19,26 @@ namespace SchoolClasses.Classes
             Disciplines = disciplines;
         }
 
-        public static void Teach(Discipline discipline)
+        public void Teach(Discipline discipline)
         {
-            OutputHandling.Message($"Teaching {discipline.Name}");
+            bool canTeach = false;
+            foreach (Discipline d in Disciplines)
+            {
+                if (d.Name == discipline.Name)
+                {
+                    canTeach = true;
+                }
+            }
+
+            if (canTeach)
+            {
+                OutputHandling.Message($"Teaching {discipline}", consoleColor: ConsoleColor.Green);
+            }
+
+            else
+            {
+                OutputHandling.Message($"Sorry, I am not allowed to teach that subject.", consoleColor: ConsoleColor.Red);
+            }
         }
     }
 }
