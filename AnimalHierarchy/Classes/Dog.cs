@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IODS.Handlers;
+﻿using IODS.Handlers;
 
 namespace AnimalHierarchy.Classes
 {
     public class Dog : Animal
     {
-        public Dog(string name, int age, string sex) : base (name, age)
+        public Dog(string name, int age, Sex sex = Sex.Male) : base (name, age, sex)
         {
-            Sex = sex;
+
         }
 
         public override void ProduceSound()

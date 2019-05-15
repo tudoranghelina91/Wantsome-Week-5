@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AnimalHierarchy.Classes;
 
 namespace AnimalHierarchy
@@ -11,7 +7,11 @@ namespace AnimalHierarchy
     {
         static void Main(string[] args)
         {
-
+            AnimalsAges.SumOfAges(AnimalsStruct.animals1);
+            AnimalsAges.SumOfAges(AnimalsStruct.animals2);
+            AnimalsAges.SumOfAges(AnimalsStruct.animals3);
+            AnimalsAges.PrintAverage();
+            Console.ReadKey();
         }
     }
 }

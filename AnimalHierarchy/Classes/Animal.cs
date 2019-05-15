@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AnimalHierarchy.Interfaces;
+﻿using AnimalHierarchy.Interfaces;
 
 namespace AnimalHierarchy.Classes
 {
@@ -11,13 +6,20 @@ namespace AnimalHierarchy.Classes
     {
         public int Age { get; set; }
         public string Name { get; set; }
-        public string Sex { get; set; }
+        public enum Sex { Male, Female };
+        protected string sex;
         public abstract void ProduceSound();
 
-        public Animal(string name, int age)
+        public Animal(string name, int age, Sex sex)
         {
             Name = name;
             Age = age;
+            this.sex = sex.ToString();
+        }
+
+        public string GetSex()
+        {
+            return sex;
         }
     }
 }
