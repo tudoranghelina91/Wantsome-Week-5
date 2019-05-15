@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Contains actual data on animals">
+    <Position X="14.063" Y="3.427" Height="0.354" Width="1.992" />
+  </Comment>
+  <Comment CommentText="Static class that contains the code for calculating age average for all animals">
+    <Position X="16.563" Y="2.417" Height="0.583" Width="1.992" />
+  </Comment>
+  <Class Name="AnimalHierarchy.Classes.Animal">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="AnimalHierarchy.Classes.Animal.Sex" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\Animal.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAEQAAAQEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Animal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AnimalHierarchy.Classes.AnimalsAges">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAQAgKAAAEAAAAAQAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AnimalsAges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHierarchy.Classes.Cat">
+    <Position X="2.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHierarchy.Classes.Dog">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHierarchy.Classes.Frog">
+    <Position X="12.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Frog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHierarchy.Classes.Kitten">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Kitten.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHierarchy.Classes.Tomcat">
+    <Position X="1.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Tomcat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="AnimalHierarchy.AnimalsStruct">
+    <Position X="14.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAIA=</HashCode>
+      <FileName>AnimalsStruct.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="AnimalHierarchy.Interfaces.ISound">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISound.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
