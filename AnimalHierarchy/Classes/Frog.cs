@@ -6,7 +6,7 @@ namespace AnimalHierarchy.Classes
     {
         public Frog(string name, int age, Sex sex = Sex.Male) : base(name, age, sex)
         {
-            
+
         }
 
         public override void ProduceSound()

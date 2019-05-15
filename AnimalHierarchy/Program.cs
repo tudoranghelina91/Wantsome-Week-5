@@ -7,9 +7,9 @@ namespace AnimalHierarchy
     {
         static void Main(string[] args)
         {
-            AnimalsAges.SumOfAges(AnimalsStruct.animals1);
-            AnimalsAges.SumOfAges(AnimalsStruct.animals2);
-            AnimalsAges.SumOfAges(AnimalsStruct.animals3);
+            AnimalsAges.CalculateSum(AnimalsStruct.animals1);
+            AnimalsAges.CalculateSum(AnimalsStruct.animals2);
+            AnimalsAges.CalculateSum(AnimalsStruct.animals3);
             AnimalsAges.PrintAverage();
             Console.ReadKey();
         }
