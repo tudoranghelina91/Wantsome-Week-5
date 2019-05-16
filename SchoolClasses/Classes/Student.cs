@@ -10,7 +10,6 @@ namespace SchoolClasses.Classes
     public class Student : Person, IComments
     {
         public static int ID { get; set; }
-        public override string Name { get; set; }
         public string Comments { get; set; }
         private static int id = 0;
 

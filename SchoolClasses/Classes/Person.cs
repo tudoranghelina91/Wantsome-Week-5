@@ -9,6 +9,6 @@ namespace SchoolClasses.Classes
 {
     public abstract class Person : IName
     {
-        public abstract string Name { get; set; }
+        public string Name { get; set; }
     }
 }

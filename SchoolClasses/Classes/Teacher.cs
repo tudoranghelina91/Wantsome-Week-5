@@ -10,7 +10,6 @@ namespace SchoolClasses.Classes
 {
     public class Teacher : Person, IComments
     {
-        public override string Name { get; set; }
         public List<Discipline> Disciplines { get; set; } = new List<Discipline>();
         public string Comments { get; set; }
         public Teacher(string name, List<Discipline> disciplines)
