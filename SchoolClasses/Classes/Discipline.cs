@@ -7,10 +7,12 @@ using SchoolClasses.Interfaces;
 
 namespace SchoolClasses.Classes
 {
-    public class Discipline : IName
+    public class Discipline : IName, IComments
     {
         public string Name { get; set; }
-
+        public int NumberOfLectures { get; set; }
+        public int NumberOfExercises { get; set; }
+        public string Comments { get; set; }
         public Discipline()
         {
 

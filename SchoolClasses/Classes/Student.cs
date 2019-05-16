@@ -9,14 +9,15 @@ namespace SchoolClasses.Classes
 {
     public class Student : Person, IComments
     {
+        public static int ID { get; set; }
         public override string Name { get; set; }
         public string Comments { get; set; }
-        public static int ID = 0;
+        private static int id = 0;
 
         public Student(string name)
         {
             Name = name;
-            ID++;
+            ID = id++;
         }
     }
 }
