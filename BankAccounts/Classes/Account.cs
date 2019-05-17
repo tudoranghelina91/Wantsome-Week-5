@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankAccounts.Classes
 {
-    abstract class Account
+    public abstract class Account
     {
         public enum Customer { Individual, Company };
         public float Balance { get; set; }
