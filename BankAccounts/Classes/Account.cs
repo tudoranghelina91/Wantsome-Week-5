@@ -8,9 +8,11 @@ namespace BankAccounts.Classes
 {
     public abstract class Account
     {
-        public enum Customer { Individual, Company };
+        public enum customer { Individual, Company };
+        public customer Customer { get; set; }
         public float Balance { get; set; }
         public float InterestRate { get; set; }
+        public int MonthsActive { get; set; }
 
         public virtual float CalculateInterest(int numberOfMonths)
         {
