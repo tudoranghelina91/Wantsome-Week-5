@@ -1,6 +1,5 @@
 ﻿using System;
 using AnimalHierarchy.Classes;
-using System.Text;
 
 namespace AnimalHierarchy
 {
