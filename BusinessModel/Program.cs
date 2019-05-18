@@ -13,22 +13,17 @@ namespace BusinessModel
     {
         static void Main(string[] args)
         {
-            IPerson person = new Customer("Alex");
+            IPerson Alex = CustomersStruct.Alex;
+            IVehicle FordFocus = CarsStruct.FordFocus;
+            IStore FordStore = StoresStruct.FordStore;
+            IStore SkodaStore = StoresStruct.SkodaStore;
 
-            person.PlaceOrder(StoresStruct.FordStore, CarsStruct.FordFocus);
-
-            Console.WriteLine("Orders after ordering from Ford Store");
-            person.Print();
-
-            person.PlaceOrder(StoresStruct.SkodaStore, CarsStruct.FordFocus);
-
-            Console.WriteLine("Orders after ordering new model from Skoda Store");
-            person.Print();
-
-            person.CancelOrder(StoresStruct.FordStore, person.Orders.Find(o => o.Vehicle.Model == CarsStruct.FordFocus.Model));
-
-            Console.WriteLine("Orders after cancelling the order on Ford Store");
-            person.Print();
+            CustomerOps.PlaceOrder(Alex, FordStore, FordFocus);
+            CustomerOps.PrintOrders(Alex, "Orders after ordering from Ford Store");
+            CustomerOps.PlaceOrder(Alex, SkodaStore, FordFocus);
+            CustomerOps.PrintOrders(Alex, "Orders after ordering new model from Skoda Store");
+            CustomerOps.CancelOrder(Alex, FordStore, FordFocus);
+            CustomerOps.PrintOrders(Alex, "Orders after cancelling the order on Ford Store");
             Console.ReadKey();
         }
     }
