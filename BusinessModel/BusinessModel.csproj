@@ -58,6 +58,8 @@
     <Compile Include="Interfaces\IStore.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structs\CarsStruct.cs" />
+    <Compile Include="Structs\StoresStruct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
