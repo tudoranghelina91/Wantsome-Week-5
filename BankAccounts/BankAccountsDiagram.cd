@@ -2,22 +2,26 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BankAccounts.Classes.Account">
     <Position X="8.25" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Enum Name="BankAccounts.Classes.Account.customer" Collapsed="true">
+      <Enum Name="BankAccounts.Classes.Account.customerType" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Classes\Account.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>EAEAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>EgEAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAAAAgAAAAI=</HashCode>
       <FileName>Classes\Account.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="BankAccounts.Classes.DepositAccount">
     <Position X="10.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\DepositAccount.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -25,18 +29,16 @@
   <Class Name="BankAccounts.Classes.LoanAccount">
     <Position X="6.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\LoanAccount.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="BankAccounts.Classes.MortgageAccount">
-    <Position X="8.25" Y="4" Width="1.5" />
+    <Position X="8.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\MortgageAccount.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="BankAccounts.Interfaces.IDeposit">
     <Position X="10.75" Y="4.25" Width="1.5" />

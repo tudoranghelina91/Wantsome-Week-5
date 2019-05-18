@@ -7,17 +7,8 @@ using BankAccounts.Interfaces;
 
 namespace BankAccounts.Classes
 {
-    public class DepositAccount : Account, IDeposit, IWithdraw
+    public class DepositAccount : Account, IWithdraw
     {
-        public void Deposit(float amount)
-        {
-
-        }
-
-        public void Withdraw(float amount)
-        {
-
-        }
 
         public override float CalculateInterest(int numberOfMonths)
         {
@@ -27,6 +18,19 @@ namespace BankAccounts.Classes
             }
 
             return numberOfMonths * InterestRate;
+        }
+
+        public DepositAccount(string customer, customerType customerType, float interestRate) : base(customer, customerType, interestRate)
+        {
+
+        }
+
+        public void Withdraw(float amount)
+        {
+            if (amount > 0)
+            {
+                Balance -= amount;
+            }
         }
     }
 }

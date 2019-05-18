@@ -7,21 +7,21 @@ using BankAccounts.Interfaces;
 
 namespace BankAccounts.Classes
 {
-    public class MortgageAccount : Account, IDeposit
+    public class MortgageAccount : Account
     {
-        public void Deposit(float amount)
+        public MortgageAccount(string customer, customerType customerType, float interestRate) : base(customer, customerType, interestRate)
         {
 
         }
 
         public override float CalculateInterest(int numberOfMonths)
         {
-            if (Customer == customer.Company && MonthsActive <= 12)
+            if (CustomerType == customerType.Company && MonthsActive <= 12)
             {
                 return (numberOfMonths * InterestRate) / 2;
             }
 
-            else if (Customer == customer.Individual && MonthsActive <= 6)
+            else if (CustomerType == customerType.Individual && MonthsActive <= 6)
             {
                 return 0;
             }
