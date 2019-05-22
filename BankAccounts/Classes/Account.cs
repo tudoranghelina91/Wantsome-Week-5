@@ -33,5 +33,15 @@ namespace BankAccounts.Classes
         {
             return numberOfMonths * InterestRate;
         }
+
+        public void Print()
+        {
+            Console.WriteLine($"Customer: {Customer}");
+            Console.WriteLine($"Customer Type: {CustomerType}");
+            Console.WriteLine($"Account Balance: {Balance}");
+            Console.WriteLine($"Interest Rate: {InterestRate}");
+            Console.WriteLine($"Months Active: {MonthsActive}");
+            Console.WriteLine();
+        }
     }
 }
